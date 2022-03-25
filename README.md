@@ -10,7 +10,7 @@ The initial set up was followed and an evaluation of the performance was complet
 
 ### 2.1 Data Preprocessing
 
-The original data set included the all of the columns show in Table 1.
+The original data set included all of the columns show in Table 1.
 
 ![All Data Set Columns](Resources/All Data Set Columns.png "Table 1 - All Data Set Columns")
 
@@ -32,7 +32,7 @@ The data set included a number of objects with multiple values as seen in table 
 
 ***Table 3A - Data Set Object Columns***
 
-The objects were encoded using OneHotEncoder and added back the the other columns to create the large set of features in Table 3B.
+The objects were encoded using OneHotEncoder and added back to the other columns to create the large set of features in Table 3B.
 
 ![Resulting Feature Columns](Resources/Resulting Feature Columns.png "Table 3B - Resulting Feature Columns")
 
@@ -48,7 +48,7 @@ Columns EIN and NAME variables are neither targets nor features, and were remove
 
 ### 2.2 Compiling, Training, and Evaluating the Model
 
-A number of models were made and run is the following sections.
+A number of models were made and run in the following sections.
 
 - 2.2.1 Initial Setup with Provided Nodes, Layers and Activations
 - 2.2.2 Attempt #1 - More Nodes and Layers
@@ -56,9 +56,9 @@ A number of models were made and run is the following sections.
 - 2.2.4 Attempt #3 - Change Activation Function
 - 2.2.5 Attempt #4 - Remove Different Noisy Variables
 
-The neurons, layers, and activation function selected for our neural network models can be send in the tables and are summarized in the final section of this report.
+The neurons, layers, and activation function selected for our neural network models can be seen in the tables and are summarized in the final section of this report.
 
-We did eventually achieve, and at that same time finally greatly exceed the target performance.
+We did eventually achieve, and at that same time, greatly exceed the target performance.
 
 #### 2.2.1 Initial Setup with Provided Nodes, Layers and Activations
 
@@ -80,13 +80,13 @@ The results are very poor with the highest losses of all of our attempts.  The a
 
 #### 2.2.2 Attempt #1 - More Nodes and Layers
 
-Based on the large number of features we first decided to increase the first layer nodes to twice the number of features, make the second layer half the first and add a 3rd layer that was half that again.
+Based on the large number of features we first decided to increase the first layer nodes to twice the number of features, make the second layer half the first and add a 3rd layer, that was half that again.
 
 ![Attempt ](Resources/Attempt #1 - More Nodes and Layers.png "Table 7 - More Nodes & Layers Neural Network Model Summary")
 
 ***Table 7 - More Nodes & Layers Neural Network Model Summary***
 
-The model was way less lossy but the accuracy was about the same and the initial try.
+The model was way less lossy but the accuracy was about the same as the initial try.
 
 ![Attempt ](Resources/Attempt #1 - More Nodes and Layers Performance.png "Table 8 - More Nodes & Layers Neural Network Performance")
 
@@ -96,7 +96,7 @@ The model was way less lossy but the accuracy was about the same and the initial
 
 #### 2.2.3 Attempt #2 - Remove Noisy Variables
 
-Not having success with more layers and nodes we tried simply removing features that seem to add little value so we dropped all the AFFILIATION_ features as can be seen in Table 9.
+Not having success with more layers and nodes, we tried simply removing features that seem to add little value so we dropped all the AFFILIATION_ features as can be seen in Table 9.
 
 ![Dropped Noisy Columns Version 1](Resources/Dropped Noisy Columns Version 1.png "Table 9 - Affiliation Columns Dropped")
 
@@ -122,7 +122,7 @@ Returning again to the original setup we then changed the activation layers from
 
 ***Table 12 - Change Activation Neural Network Model Summary***
 
-Interesting the results where very close to that of the more nodes and layer model - and still not very good.
+Interestingly, the results where very close to that of the more nodes and layer model - and still not very good.
 
 ![Attempt ](Resources/Attempt #3 - Change Activation Function Performance.png "Table 13 - Change Activation Neural Network Model Performance")
 
@@ -132,7 +132,7 @@ Interesting the results where very close to that of the more nodes and layer mod
 
 #### 2.2.5 Attempt #4 - Remove Different Noisy Variables
 
-In a final attempt to see if we could improve performance we looked at the features again and decided that the Ask Amount (ASK_AMT) shouldn't have a big impact on success but being all over the map may make a big difference on how the model performs.
+In a final attempt to see if we could improve performance we looked at the features again and decided that the Ask Amount (ASK_AMT) shouldn't have a big impact on success, but being all over the map may make a big difference on how the model performs.
 
 ![Dropped Noisy Columns Version 2](Resources/Dropped Noisy Columns Version 2.png "Table 14 - Ask Amount Column Dropped")
 
