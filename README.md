@@ -28,7 +28,7 @@ The data set included a number of objects with multiple values as seen in table 
 
 
 
-![Data Set Object Columns](Resources/Data Set Object Columns.png "Table 3A - Data Set Object Columns")
+![Data Set Object Columns](Resources/DataSetObjectColumns.png "Table 3A - Data Set Object Columns")
 
 ***Table 3A - Data Set Object Columns***
 
