@@ -36,7 +36,7 @@ The objects were encoded using OneHotEncoder and added back to the other columns
 
 ![Resulting Feature Columns](Resources/ResultingFeatureColumns.png "Table 3B - Resulting Feature Columns")
 
-
+***Table 3B - Resulting Feature Columns***
 
 
 
